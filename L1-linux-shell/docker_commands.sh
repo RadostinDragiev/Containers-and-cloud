@@ -69,3 +69,40 @@ tail -n 2 file1.txt
 
 # Read data from a file
 cat file1.txt
+
+# Redirect output(stdout or stderr) and replace the content
+echo Hello > hello.txt
+
+# Redirect output(stdout or stderr) and add to already existing conent
+echo Hello >> hello.txt
+
+# Prints current date and time
+date
+
+# Prints current date in format
+date +%Y-%m-%d
+
+# Prints 3 month(previous, current and next)
+cal -3
+
+# Prints since when/ how long the system is operating
+uptime
+
+# Lists history of commands
+history
+
+# Exit the session
+exit
+# or
+logout
+
+# Prints all files staring with 'os'
+cd /etc
+ls os*
+
+# Prints detailed infromation about current distribution
+cd /etc
+cat os-release
+
+# Prints output code of previous command
+echo $?
