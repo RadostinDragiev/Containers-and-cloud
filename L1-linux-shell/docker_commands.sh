@@ -70,6 +70,9 @@ tail -n 2 file1.txt
 # Read data from a file
 cat file1.txt
 
+# Edit file
+vi file1.txt
+
 # Redirect output(stdout or stderr) and replace the content
 echo Hello > hello.txt
 
@@ -106,3 +109,15 @@ cat os-release
 
 # Prints output code of previous command
 echo $?
+
+# Sequence of comands
+cat file.txt ;  echo OK
+
+# Pipe of commands(read file.txt then sort it and then show me first 3 lines)
+cat file.txt | sort | head -n 3
+
+# Locigal AND(read file.txt AND print OK, if first command fail then second won't be executed)
+cat file.txt && echo OK
+
+# Logical OR(read file.txt OR print OK, if first command fail then second will be executed)
+cat file123.txt || echo OK
