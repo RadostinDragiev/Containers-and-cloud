@@ -121,3 +121,85 @@ cat file.txt && echo OK
 
 # Logical OR(read file.txt OR print OK, if first command fail then second will be executed)
 cat file123.txt || echo OK
+
+# Lists all the user on the system
+cat /etc/passwd
+
+# Add user
+adduser someName
+
+# Swtich to user
+su - someName
+
+# Lists all groups
+cat /etc/group
+
+# Change rights to file.txt(everyone can read and execute, using the octal mask)
+cmod 755 file.sh
+
+# Change owner of a file
+chown user file.txt
+
+# Change group of a file
+chgrp group file.txt
+
+# Change owner of a file and it's group
+chown user:group file.txt
+
+# Alternative commands
+    # set all right to user
+    chmod u+rwx file.txt
+
+    # set all right to group
+    chmod g+rwx file.txt
+
+    # remove all right to user
+    chmod u-rwx file.txt
+
+    # remove all right to group
+    chmod g-rwx file.txt
+# Lists all environment variabls
+env
+
+# Check value from environment variable key
+echo $DOCKER_VERSION
+
+# Creates environment varable
+export MY_VARIABLE=12345678
+
+# Connect with SSH
+ssh 162.168.0.8
+
+# Lists all jobs
+jobs
+
+# Create sleep job for 10 seconds
+sleep 10
+
+# Create sleep job for 10 seconds on background
+sleep 10 &
+
+# Kill job
+kill -9 [PID]
+
+# Terminate job
+kill -15 [PID]
+
+# Install nano package inside the system(For Ubuntu based contributions)
+apt install nano
+#or
+apk add nano
+
+# Update apt/apk (empty(all) or for certain package)
+apt update
+apk update
+
+# Upgrade apt/apk (empty(all) or for certain package)
+apt upgrade
+apk upgrade
+
+# Downloadn locally file
+wget [url]
+
+# Get data from url
+curl https://www.google.com/intl/en-US/gmail/about/
