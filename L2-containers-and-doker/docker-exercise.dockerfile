@@ -12,4 +12,4 @@ docker pull httpd:latest
 docker run --name my-apache-app -d -p 8080:80 -v ${PWD}/data:/usr/local/apache2/htdocs/ httpd:latest
 
 # Exercise 4. SQL Server Container
-docker run -e ACCEPT_EURLA=Y -e MSSQL_SA_PASSWORD=yourStrongPassword12# -p 1433:1433 -v sqldata:/var/opt/mssql -d mcr.microsoft.com/mssql/server
+docker run -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=yourStrongPassword12# -p 1433:1433 -v sqldata:/var/opt/mssql -d mcr.microsoft.com/mssql/server
