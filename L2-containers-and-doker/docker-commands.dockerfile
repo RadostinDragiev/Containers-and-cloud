@@ -54,3 +54,6 @@ docker volume inspect #[volume-name]
 
 # Delete volume
 docker volume rm #[volume-name]
+
+# Docker inspect
+docker inspect #[container name]
