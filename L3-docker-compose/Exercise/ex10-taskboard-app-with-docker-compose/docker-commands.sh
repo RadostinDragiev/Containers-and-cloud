@@ -1,5 +1,3 @@
-# Created docker-compose.yaml to ex6-taskboard-app-image-build
-
 # Create network
 docker network create taskboard_network
 
