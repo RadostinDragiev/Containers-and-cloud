@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: max
+      MONGO_INITDB_ROOT_PASSWORD: secret
+    ports:
+      - "27017:27017"
+    volumes:
+      - data:/data/db
+    networks:
+      - react-app-network
+
+  backend:
+    image: radostind/backend-image
+    volumes:
+      - logs:/app/logs
+      - node_modules:/app/node_modules
+    networks:
+      - react-app-network
+    ports:
+      - "4000:80"
+    depends_on:
+      - mongo
+
+  frontend:
+    image: radostind/frontend-image
+    volumes:
+      - ./src:/app/src
+    networks:
+      - react-app-network
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  data:
+  logs:
+  node_modules:
+
+networks:
+  react-app-network:
