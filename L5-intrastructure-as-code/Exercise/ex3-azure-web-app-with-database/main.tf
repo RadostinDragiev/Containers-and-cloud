@@ -11,7 +11,7 @@ terraform {
 # az account show --query id --output tsv
 provider "azurerm" {
   features {}
-  subscription_id = "bea05df3-d18b-49fc-9d24-94631ae935e7"
+  subscription_id = ""
 }
 
 resource "azurerm_resource_group" "rado_group" {
