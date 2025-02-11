@@ -7,9 +7,11 @@ terraform {
   }
 }
 
+# Get subscription_id using:
+# az account show --query id --output tsv
 provider "azurerm" {
   features {}
-  skip_provider_registration = true
+  subscription_id = ""
 }
 
 resource "azurerm_resource_group" "rado_group" {

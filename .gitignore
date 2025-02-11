@@ -2,3 +2,10 @@ Exam-23-08-2024/Retake-Exam-Resources/Task-2/.terraform/providers/registry.terra
 L5-intrastructure-as-code/Exercise/ex1-azure-resource-group/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.89.0/darwin_amd64/terraform-provider-azurerm_v3.89.0_x5
 L5-intrastructure-as-code/Exercise/ex1-azure-resource-group/terraform.tfstate.backup
 L5-intrastructure-as-code/Exercise/ex1-azure-resource-group/.terraform.lock.hcl
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/.terraform.lock.hcl
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/terraform.tfstate.backup
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_amd64/LICENSE.txt
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/.terraform/providers/registry.terraform.io/hashicorp/azurerm/4.18.0/darwin_amd64/LICENSE.txt
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/terraform.tfstate
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/darwin_amd64/terraform-provider-random_v3.6.3_x5
+L5-intrastructure-as-code/Exercise/ex2-azure-web-app/.terraform/providers/registry.terraform.io/hashicorp/azurerm/4.18.0/darwin_amd64/terraform-provider-azurerm_v4.18.0_x5
